@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@
+
+
+# we want to use the system version of included modules, so
+# we move the inc away and move it back afterwards.
+# we do this only in inc/Devel since there is already a mechanism
+# to handle system libs in the upstream code.
+override_dh_auto_clean:
+	dh_auto_clean
+	[ ! -d $(CURDIR)/inc/Devel.save ] || mv $(CURDIR)/inc/Devel.save $(CURDIR)/inc/Devel
+
+override_dh_auto_configure:
+	[ ! -d $(CURDIR)/inc/Devel ] || mv $(CURDIR)/inc/Devel $(CURDIR)/inc/Devel.save
+	SEREAL_USE_BUNDLED_LIBS=0 SEREAL_USE_BUNDLED_ZSTD=0 dh_auto_configure

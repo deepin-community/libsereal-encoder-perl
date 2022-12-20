@@ -1,0 +1,363 @@
+libsereal-encoder-perl (4.018+ds-deepin1) unstable; urgency=medium
+
+  * Rebuild
+
+ -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 17:59:57 +0800
+
+libsereal-encoder-perl (4.018+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.018+ds.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 03 Aug 2020 14:08:08 +0200
+
+libsereal-encoder-perl (4.017+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.017+ds.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Jul 2020 18:48:01 +0200
+
+libsereal-encoder-perl (4.014+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.014+ds.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 12 Jun 2020 02:53:24 +0200
+
+libsereal-encoder-perl (4.012+ds-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+  [ gregor herrmann ]
+  * Import upstream version 4.012+ds.
+  * Set Rules-Requires-Root: no.
+  * Bump debhelper-compat to 13.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 11 Jun 2020 18:11:46 +0200
+
+libsereal-encoder-perl (4.011+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.011+ds.
+  * Update copyright/license term for miniz.{c,h}.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 04 Feb 2020 17:12:00 +0100
+
+libsereal-encoder-perl (4.009+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.009+ds.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Update Build-Depends for cross builds.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * debian/watch: use uscan version 4.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 03 Feb 2020 16:56:19 +0100
+
+libsereal-encoder-perl (4.007+ds-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Alexandre Mestiashvili ]
+  * New upstream version 4.007+ds
+  * Update uploader's email in d/control and d/copyright
+  * Bump policy to 4.4.0, switch to debhelper-compat
+
+ -- Alexandre Mestiashvili <mestia@debian.org>  Thu, 11 Jul 2019 21:23:06 +0200
+
+libsereal-encoder-perl (4.005+ds-1) unstable; urgency=medium
+
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
+
+  [ Alexandre Mestiashvili ]
+  * New upstream version 4.005+ds
+
+  [ gregor herrmann ]
+  * Bump versioned build dependency on libsereal-decoder-perl to >= 4.005.
+  * Bump debhelper compatibility level to 10.
+
+ -- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>  Wed, 24 Jan 2018 11:57:42 +0100
+
+libsereal-encoder-perl (4.004+ds-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Drop debian/tests/pkg-perl/smoke-tests, handled by pkg-perl-
+    autopkgtest now.
+
+  [ Alexandre Mestiashvili ]
+  * Exclude zstd/* via Files-Excluded option in d/copyright
+  * Update d/watch, add +ds extension as we strip bundled zstd
+  * New upstream version 4.004+ds
+  * Update d/control:
+    - bump Standards-Version to 4.1.1
+    - add libzstd-dev, libtest-deep-perl, libtest-differences-perl
+      to Build-Depends
+    - depend on libsereal-decoder-perl (>= 4.004)
+  * set ENV variables to use packages version of zstd
+  * Drop patch applied by upstream, rm -r debian/patches
+
+ -- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>  Thu, 16 Nov 2017 21:47:09 +0100
+
+libsereal-encoder-perl (3.015-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Alexandre Mestiashvili ]
+  * New upstream version 3.015
+  * Bump Standards-Version, add Testsuite: autopkgtest-pkg-perl
+  * Remove trailing spaces in d/copyright
+  * Export hardening flags
+  * Add patch fixing a typo
+
+  [ gregor herrmann ]
+  * debian/copyright: update copyright years for ppport.h.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+  * autopkgtest: enable more smoke tests.
+
+ -- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>  Thu, 08 Sep 2016 15:44:32 +0200
+
+libsereal-encoder-perl (3.014-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 07 Dec 2015 15:32:29 +0100
+
+libsereal-encoder-perl (3.008-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Drop pod-syntax.patch, merged upstream.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 29 Nov 2015 15:06:40 +0100
+
+libsereal-encoder-perl (3.006-1) unstable; urgency=medium
+
+  * Team upload.
+  * Drop override_dh_auto_test, debhelper runs tests verbosely since
+    9.20150501.
+  * Fix typo in short description.
+  * Rename autopkgtest configuration file(s) as per new pkg-perl-
+    autopkgtest schema.
+  * New upstream release.
+  * Remove URL for dev releases from debian/watch.
+  * Make license names unique in debian/copyright.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+  * Add patch to fix a POD syntax error.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 16 Nov 2015 21:59:37 +0100
+
+libsereal-encoder-perl (3.005.001-1) unstable; urgency=medium
+
+  [ Alexandre Mestiashvili ]
+  * Imported Upstream version 3.005.001
+  * d/control: cme fix dpkg
+  * d/copyright: updated debian/* copyright year
+
+  [ gregor herrmann ]
+  * Mark package as autopkgtest-able.
+
+ -- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>  Wed, 29 Apr 2015 11:12:18 +0200
+
+libsereal-encoder-perl (3.003-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+  * Set SEREAL_USE_BUNDLED_LIBS=1 in debian/rules.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 20 Oct 2014 18:26:33 +0200
+
+libsereal-encoder-perl (3.002.001-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    Fixes "FTBFS on some architectures" with Niko Tyni's patch for 64-bit
+    big-endian architectures.
+    (Closes: #742409)
+  * Bump versioned build dependency on libsereal-decoder-perl.
+  * Declare compliance with Debian Policy 3.9.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 26 Sep 2014 14:19:32 +0200
+
+libsereal-encoder-perl (3.002-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 26 Aug 2014 19:36:24 -0700
+
+libsereal-encoder-perl (3.001.012-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 16 Aug 2014 02:07:11 +0200
+
+libsereal-encoder-perl (3.001.011-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 12 Aug 2014 21:15:22 +0200
+
+libsereal-encoder-perl (3.001.006-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    Rework bulk tests.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 03 Aug 2014 23:23:03 +0200
+
+libsereal-encoder-perl (3.001.005-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    Fix to run all tests again.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 28 Jul 2014 16:33:01 +0200
+
+libsereal-encoder-perl (3.001.004-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    Further improvements for non-x86 architectures.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 27 Jul 2014 22:25:25 +0200
+
+libsereal-encoder-perl (3.001.003-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream development release.
+    Further tweaks to alignedness issues.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 15 Jul 2014 16:29:25 +0200
+
+libsereal-encoder-perl (3.001.002-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream development release.
+    Addresses "endian or alignedness issues".
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 14 Jul 2014 17:13:30 +0200
+
+libsereal-encoder-perl (3.001-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debian/copyright: add information about new miniz.* files.
+  * Bump versioned build dependency on libsereal-decoder-perl to 3.000.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 06 Jun 2014 13:17:09 +0200
+
+libsereal-encoder-perl (2.12-2) unstable; urgency=medium
+
+  * Team upload.
+  * Build-depend on libsereal-decoder-perl (>= 2.12-2).
+    This version contains an upstream patch dealing with alignment issues on
+    ARM; cf. #742409.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 15 May 2014 16:48:49 +0200
+
+libsereal-encoder-perl (2.12-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Drop perl-path.patch, merged upstream.
+  * Make test output verbose to help upstream debug test failures.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 13 May 2014 22:08:43 +0200
+
+libsereal-encoder-perl (2.11-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Add a patch to fix the perl path in const-c.inc.
+  * Make build dependency on libsereal-decoder-perl versioned.
+    META.yml and friends require 2.06, the $TestCompat variable in
+    lib/Sereal/Encoder.pm wants 2.07, so let's take the latter.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 14 Apr 2014 21:13:08 +0200
+
+libsereal-encoder-perl (2.08-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 13 Apr 2014 17:37:01 +0200
+
+libsereal-encoder-perl (2.06-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.06
+  * d/control: added libsereal-decoder-perl to Build-Depends
+    needed to pass tests
+
+ -- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>  Wed, 19 Mar 2014 17:12:02 +0100
+
+libsereal-encoder-perl (2.04-1) unstable; urgency=low
+
+  [ Daniel Lintott ]
+  * d/control, d/copyright, d/watch: Correct homepage url
+    and drop trailing slash
+
+  [ Alexandre Mestiashvili ]
+  * Imported Upstream version 2.04
+
+ -- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>  Thu, 06 Mar 2014 17:42:21 +0100
+
+libsereal-encoder-perl (2.03-1) unstable; urgency=medium
+
+  * Imported Upstream version 2.03
+
+ -- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>  Fri, 10 Jan 2014 11:08:02 +0100
+
+libsereal-encoder-perl (0.37-1) unstable; urgency=low
+
+  * Imported Upstream version 0.37
+
+ -- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>  Mon, 16 Sep 2013 10:03:35 +0200
+
+libsereal-encoder-perl (0.36-1) unstable; urgency=low
+
+  * Imported Upstream version 0.36
+  * Refreshed d/copyright to more accurately reflect the various copyright
+    holders of code copied or inspired from elsewhere
+
+ -- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>  Tue, 14 May 2013 13:40:56 +0200
+
+libsereal-encoder-perl (0.31-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #701000)
+
+ -- Alexandre Mestiashvili <alex@biotec.tu-dresden.de>  Wed, 20 Feb 2013 08:29:14 +0100
