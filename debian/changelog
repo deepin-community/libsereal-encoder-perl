@@ -1,8 +1,104 @@
-libsereal-encoder-perl (4.018+ds-deepin1) unstable; urgency=medium
+libsereal-encoder-perl (5.004+ds-1) unstable; urgency=medium
 
-  * Rebuild
+  * Team upload.
+  * Import upstream version 5.004+ds.
+  * Bump versioned test dependency on libsereal-decoder-perl.
 
- -- Deepin Packages Builder <packages@deepin.org>  Fri, 11 Nov 2022 17:59:57 +0800
+ -- gregor herrmann <gregoa@debian.org>  Sat, 24 Jun 2023 02:14:00 +0200
+
+libsereal-encoder-perl (5.003+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 5.003+ds.
+  * Make build dependencies on libdevel-checklib-perl and libzstd-dev
+    versioned.
+  * Bump versioned test dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 10 Feb 2023 02:39:29 +0100
+
+libsereal-encoder-perl (5.002+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 5.002+ds.
+  * Bump versioned test dependency on libsereal-decoder-perl.
+  * Declare compliance with Debian Policy 4.6.2.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 04 Feb 2023 18:43:15 +0100
+
+libsereal-encoder-perl (5.001+ds-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + libsereal-encoder-perl: Drop Multi-Arch: same.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 19 Nov 2022 16:28:25 +0000
+
+libsereal-encoder-perl (5.001+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 5.001+ds.
+  * Bump versioned test dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 10 Sep 2022 23:05:33 +0200
+
+libsereal-encoder-perl (4.025+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Add lintian override for upstream-metadata-missing-repository.
+    The upstream repo contains more stuff and is not helpful.
+  * Import upstream version 4.025+ds.
+  * Update debian/upstream/metadata.
+  * Declare compliance with Debian Policy 4.6.1.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 29 Jul 2022 01:00:48 +0200
+
+libsereal-encoder-perl (4.023+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.023+ds.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 20 Feb 2022 17:18:18 +0100
+
+libsereal-encoder-perl (4.022+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.022+ds.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 19 Feb 2022 19:56:33 +0100
+
+libsereal-encoder-perl (4.021+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.021+ds.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 18 Feb 2022 17:04:18 +0100
+
+libsereal-encoder-perl (4.020+ds-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 4.020+ds.
+  * Update build dependencies.
+  * Bump versioned build dependency on libsereal-decoder-perl.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 18 Feb 2022 02:27:58 +0100
+
+libsereal-encoder-perl (4.019+ds-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + libsereal-encoder-perl: Add Multi-Arch: same.
+
+  [ gregor herrmann ]
+  * Import upstream version 4.019+ds.
+  * Bump versioned test dependency on libsereal-decoder-perl.
+  * Declare compliance with Debian Policy 4.6.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 12 Feb 2022 23:47:13 +0100
 
 libsereal-encoder-perl (4.018+ds-1) unstable; urgency=medium
 
